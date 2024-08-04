@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-color: rgb(0,0,33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+         
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18,18,62);
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+            position: fixed; 
+            width: 100%;
+            top: 0; 
+            z-index: 1000; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+
+body {
+    padding-top: 80px; 
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+
+        
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover{
+            color: rgb(153,153,226);
+            font-size: 1.04rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 100px 0;
+            align-items: center;
+    
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .firstSection:hover {
+   
+            transform: scale(1.05);
+        }
+
+.leftSection {
+    font-size: 2.5rem;
+    transition: color 0.5s ease, transform 0.5s ease;
+}
+
+.leftSection:hover {
+    color: rgb(153, 153, 226);
+    transform: scale(1.1);
+}
+
+.rightSection img {
+    width: 100%; 
+    max-width: 500px; 
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+.rightSection img:hover {
+    transform: scale(1.05);
+}
+
+.purple {
+    color: rgb(170, 170, 228);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(153, 153, 226);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+        
+
+        .left{
+            font-size: 1.5rem;
+        }
+
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 100px 0;
+            align-items: center;
+
+        }
+
+        .firstSection > div{
+            width: 30%;
+        }
+
+        .leftSection{
+            font-size: 2.5rem;
+            transition: color 0.5s ease, transform 0.5s ease;
+        }
+        
+        .leftSection:hover {
+            color: rgb(153,153,226);
+            transform: scale(1.1);
+        }
+        
+        .rightSection img{
+            width: 80%;
+        }
+
+        .purple{
+            color: rgb(170,170,228);
+        }
+
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 2rem;
+            
+        }
+
+        .secondSection h1{
+            font-size: 1.4rem;
+        }
+
+        .fourthSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 2rem;
+            
+        }
+
+        main hr{
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .thirdSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 250vh;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 2rem;
+            
+        }
+
+        .text-gray{
+            color: grey;
+        }
+
+        .secondSection .box{
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        
+        .image-top{
+             width: 50px;
+             position: relative;
+             top: -32px;
+             left: -9px;
+        }
+
+        .image-top-x{
+             width: 33px;
+             position: relative;
+             top: -32px;
+             left: -9px;
+        }
+
+        .vertical-title{
+             position: relative;
+             top: 75px;
+             width: 150px;
+        }
+
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        .about-text{
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 2rem;
+            margin-top: 10rem;
+            
+        }
+
+        .btn-box{
+            display:flex;
+            justify-content: space-between;
+            width: 320px;
+            height: 45px;
+        }
+
+        .btn-box a.btn{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 100%;
+            background:  rgb(170,170,228);
+            color:  rgb(18,18,62);
+            font-size: 1rem;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: .6s;
+            border-radius: 5px;
+
+
+        }
+
+        
+            
+            
+
+        
+
+        .main-text{
+            
+            width: 100%;
+            text-align: center;
+            
+            
+        }
+        .main-text span{
+            color: grey;
+
+        }
+
+        .section-services{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            grid-gap: 2rem;
+        }
+
+        .section-services .service-box{
+            flex: 1 1 18rem;
+            padding: 2rem 1rem 2rem;
+            text-align: center;
+            background: var(--secon-bg-color);
+            transition: transform .4s;
+            border-radius: 10px;
+        }
+
+        .service-btn{
+            width: auto;
+            justify-content: center;
+        }
+       
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul{
+            list-style:none;
+        }
+
+        .projects {
+    padding: 2rem 0;
+}
+
+.section-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid rgb(153,153,226);
+}
+
+.project-content {
+    padding: 1rem;
+}
+
+.project-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-date {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.btn {
+    background: rgb(170, 170, 228);
+    color: rgb(18, 18, 62);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: rgb(153, 153, 226);
+}
+
+.about {
+    background: rgb(18, 18, 62);
+   
+    color: white;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+   
+   
+    text-align: left;
+    line-height: 1.6;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text h2 span {
+    color: rgb(170, 170, 228);
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.btn-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgb(170, 170, 228);
+    color: rgb(18, 18, 62);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background: rgb(153, 153, 226);
+    color: white;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 400px;
+    margin-left: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.contactSection {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.text-gray {
+    color: #6c757d;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contactSection {
+            padding: 20px;
+            background-color: rgb(18, 18, 62);
+            color: white;
+            text-align: center;
+        }
+
+        .contactSection h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contactSection p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .contactSection a {
+            color: rgb(170, 170, 228);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contactSection a:hover {
+            color: rgb(153, 153, 226);
+        }
+
+        .contactDetails {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#firstSection">Home</a></li>
+                    <li><a href="#ABOUT">About</a></li>
+                    <li><a href="#secondsection">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contactSection">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        
+    </header>
+    <main>
+        <section id="firstSection" class="firstSection">
+            <div class="leftSection">
+               My Name is
+               <div><span class="purple">Ishita Chaubey</span></div>
+               <div id="profession" class="profession">and I am a <span>College Student</span></div>
+               <span id="element"></span>
+            </div>   
+            <div class="rightSection">
+                <img src="photo.jpg" alt="">
+            </div>
+
+        </section>
+   
+        <section id="ABOUT" class="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About<span> Me</span></h2>
+                    <>
+                        I am a dedicated college student and a full-stack developer with proficiency in Python, Java, HTML, CSS, and JavaScript. Eager to expand my skill set, I am passionate about learning new technologies and staying abreast of industry trends. As an enthusiast of data structures and algorithms (DSA), I am known for my hardworking nature and approach challenges with enthusiasm, seeking innovative solutions. Committed to academic excellence, I balance theoretical knowledge with practical application, contributing to a dynamic learning environment. With a strong foundation in programming languages and a relentless pursuit of knowledge, I strive for continuous improvement, aspiring to make a meaningful impact in the ever-evolving world of technology.
+            
+                    </p>
+                    
+                </div>
+               
+            </div>
+        </section>
+        
+       
+        <section id="secondsection" class="secondSection">
+            <span class="text-gray">What I know</span>
+            <h1>SKILLS</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="python.jpg" alt="">
+                    <div class="vertical-title">
+                        PYTHON
+                    </div>
+                    <div class="vertical-desc">
+                        Proficient in Python, I possess a strong command of its syntax, libraries, and frameworks. My expertise extends to web development, data analysis, machine learning, and automation. With a deep understanding of best practices, I excel in creating efficient, maintainable code, demonstrating versatility and problem-solving skills in diverse Python projects.
+                    </div>
+                </div>    
+                <div class="vertical">
+                    <img class="image-top" src="java.jpg" alt="">
+                    <div class="vertical-title">
+                        JAVA
+                    </div>
+                    <div class="vertical-desc">
+                        Exemplary in Java, I exhibit adeptness in object-oriented programming, software development, and enterprise applications. My proficiency spans from core concepts to advanced features, ensuring robust and scalable solutions. With a keen eye for performance optimization and code quality, I contribute effectively to Java-based projects with precision and expertise.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        HTML
+                    </div>
+                    <div class="vertical-desc">
+                        Proficient in HTML, I excel in crafting structured, semantic, and accessible web content. My expertise includes creating responsive layouts, optimizing for various browsers, and integrating multimedia elements seamlessly. With a keen eye for design and adherence to best practices, I consistently deliver visually appealing and user-friendly HTML solutions.
+                    </div>
+                </div>    
+                <div class="vertical">
+                    <img class="image-top-x" width="30px" src="css.png" alt="">
+                    <div class="vertical-title">
+                        CSS
+                    </div>
+                    <div class="vertical-desc">
+                        Mastery in CSS defines my ability to style and enhance web interfaces. Proficient in creating visually stunning and responsive designs, I leverage CSS3 features for animations and transitions. My skills include cross-browser compatibility and adherence to best practices, ensuring a seamless and aesthetically pleasing user experience in diverse web environments.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top-x" src="js.png" alt="">
+                    <div class="vertical-title">
+                        JAVASCRIPT
+                    </div>
+                    <div class="vertical-desc">
+                        Adept in JavaScript, I bring dynamic functionality and interactivity to web applications. Proficient in both frontend and backend development, I leverage frameworks like React and Node.js. My expertise includes asynchronous programming, DOM manipulation, and RESTful API integration, ensuring robust, efficient, and feature-rich JavaScript-powered solutions.
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="secondSection">
+           
+            <div class="box">
+                <div class="vertical">
+                    
+                    <div class="vertical-title">
+                        REACT
+                    </div>
+                    <div class="vertical-desc">
+                        
+
+                       React is a JavaScript library for building dynamic user interfaces. It emphasizes a component-based architecture, allowing developers to create reusable UI components. With features like virtual DOM, hooks, and state management, React enables efficient rendering and updates, making it ideal for developing fast and responsive web applications.
+                    </div>
+                </div>    
+                <div class="vertical">
+                   
+                    <div class="vertical-title">
+                        DOCKER
+                    </div>
+                    <div class="vertical-desc">
+                         
+
+                           Docker is a platform for developing, shipping, and running applications in containers. It enables developers to package applications and dependencies into a standardized unit, ensuring consistency across environments. Docker simplifies deployment, enhances scalability, and supports microservices architecture, making it a cornerstone of modern software development and DevOps practices.
+                    </div>
+                </div>
+                <div class="vertical">
+                    
+                    <div class="vertical-title">
+                        MONGODB
+                    </div>
+                    <div class="vertical-desc">
+                        
+
+MongoDB is a popular NoSQL database known for its flexibility and scalability. It uses a document-oriented data model, storing data in JSON-like BSON format. This schema-less structure allows easy handling of unstructured data. MongoDB is ideal for building modern applications requiring high performance, scalability, and real-time data access.
+                    </div>
+                </div>    
+                <div class="vertical">
+                   
+                    <div class="vertical-title">
+                        NODEJS
+                    </div>
+                    <div class="vertical-desc">
+                        Node.js is a JavaScript runtime built on Chrome's V8 engine, designed for executing server-side code. It uses an event-driven, non-blocking I/O model, making it ideal for scalable network applications. Node.js enables developers to build fast, efficient web servers and real-time applications, leveraging a vast ecosystem of packages and libraries.
+                
+                    </div>
+                </div>    
+                <div class="vertical">
+                   
+                    <div class="vertical-title">
+                        EXPRESS
+                    </div>
+                    <div class="vertical-desc">
+                        Express is a minimalist web application framework for Node.js, designed for building fast and scalable server-side applications. It provides a robust set of features for handling HTTP requests, middleware integration, and routing. Express simplifies the development of RESTful APIs and web services, making it a popular choice for backend development.
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        
+        
+       
+        <section id="projects" class="projects thirdSection">
+            <div class="main-text">
+                <span>My Projects</span>
+                <h2>Showcase</h2>
+            </div>
+            <div class="section-projects">
+                <div class="project-card">
+                    <img src="bank-management.webp" alt="Bank Management System">
+                    <div class="project-content">
+                        <h3>Bank Management System</h3>
+                        <p>
+                            The bank management project, crafted with Python and SQL, features a robust backend using Flask or Django. Its relational database captures customer accounts, transactions, and secure authentication. Employing SQL queries, the system enables essential banking functions, including account creation, balance inquiries, fund transfers, and transaction tracking, ensuring efficiency and security.
+                        </p>
+                        <div class="project-meta">
+                            <span class="project-date">Date: August 2021</span>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="reg.jpg" alt="Registration Form">
+                    <div class="project-content">
+                        <h3>Registration Form</h3>
+                        <p>
+                            The registration project employs HTML, CSS, and JavaScript to create an engaging user interface. Node.js and Express handle the server-side operations, while MongoDB ensures efficient data storage. Users can seamlessly register, with the system validating inputs and securely storing information, providing a streamlined and responsive registration experience.
+                        </p>
+                        <div class="project-meta">
+                            <span class="project-date">Date: July 2023</span>
+                            <a href="https://github.com/ishita2004/CODSOFT" class="btn" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="project-card">
+                    <img src="shopping.jpg" alt="SIH Project">
+                    <div class="project-content">
+                        <h3>SIH Project</h3>
+                        <p>
+                            The shopping site for Jammu and Kashmir vendors is designed with HTML, CSS, and JavaScript, offering an attractive and user-friendly interface. Node.js and Express power the backend, seamlessly handling transactions and inventory management. MongoDB ensures efficient data storage, fostering a platform where local vendors can showcase and sell their products, promoting regional commerce.
+                        </p>
+                        <div class="project-meta">
+                            <span class="project-date">Date: June 2023</span>
+                           
+                        </div>
+                    </div>
+                </div>
+        
+              
+                <div class="project-card">
+                    <img src="mo.webp" alt="Movie">
+                    <div class="project-content">
+                        <h3>Movie-Review </h3>
+                        <p>
+                            I created a full-stack movie review website using React for the front end and MongoDB 
+                                  for the back end. Users can browse, add, and review movies, with user authentication and 
+                                a dynamic, responsive design. The site features real-time updates and a sleek, intuitive 
+                                interface for a seamless user experience. 
+                        </p>
+                        <div class="project-meta">
+                            <span class="project-date">Date: March 2024</span>
+                            <a href="https://github.com/ishita2004/movie-review" class="btn" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- New Project 2 -->
+                <div class="project-card">
+                    <img src="ecs.jpeg" alt="Clarity-Drive">
+                    <div class="project-content">
+                        <h3>Clarity-Drive </h3>
+                        <p>
+                            I developed a hardware project to enhance driver visibility during foggy weather and 
+reduce accidents. The system integrates a PIR sensor, IR sensor, ultrasonic sensor, 
+camera module, and GPS module. The PIR sensor detects human presence, the IR sensor 
+penetrates fog to provide clear imagery, and the ultrasonic sensor measures distance to 
+obstacles. The camera module captures real-time video, which is processed to enhance 
+visibility. The GPS module provides location tracking and navigation. Combined, these 
+components create a comprehensive system that offers drivers a clear view in poor 
+weather conditions, improving safety and reducing the likelihood of accidents.
+                        </p>
+                        <div class="project-meta">
+                            <span class="project-date">Date: January 2024</span>
+                            
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- New Project 3 -->
+                <div class="project-card">
+                    <img src="con.jpg" alt="Task Manager">
+                    <div class="project-content">
+                        <h3>Conventional interface</h3>
+                        <p>
+                            Developed an AR-based major project aimed at making online shopping website conversational to give people 
+‘look and feel’ option and an interactive experience, integrating fun 3D-AR elements to bring furniture to life, 
+enhancing the shopping environment. 
+● The HTML and CSS-driven interface offers intuitive navigation, personalized recommendations, and an 
+immersive AR feature, creating a conversational website. 
+                        </p>
+                        <div class="project-meta">
+                            <span class="project-date">Date: November 2023</span>
+                            <a href="https://github.com/ishita2004/Hackathon" class="btn" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contactSection" class="contactSection">
+            <h1>Contact Me</h1>
+            <div class="contactDetails">
+                <p>Phone: 9945518920</p>
+                <p>Email: <a href="mailto:ishitax2004@gmail.com">ishitax2004@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/ishita-chaubey-332819265/" target="_blank">Connect with me on LinkedIn</a></p>
+            </div>
+        </section>
+       
+        
+        
+        
+        
+        <script>
+            const professions = [
+                'College Student',
+                'Full Stack Developer',
+                
+                'Web Developer',
+                'UI/UX Designer',
+                'Data Analyst',
+                'ML Enthusiast',
+                
+            ];
+            
+            let index = 0;
+            
+            setInterval(() => {
+                index = (index + 1) % professions.length;
+                document.querySelector('#profession span').textContent = professions[index];
+            }, 2000);
+        </script>
+        
+        
+            
+
+                              
+                              
+                             
+                                 
+    
+
+                
+                       
+    
+        
+            
+        
+        
+
+    </main>
+    
+    
+</body>
+</html>
